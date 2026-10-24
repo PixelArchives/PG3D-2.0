@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1306761399503872}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1306761399503872
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4332888814680202}
+  - 33: {fileID: 33917995205976818}
+  - 23: {fileID: 23919898212590686}
+  - 114: {fileID: 114795485678841341}
+  - 65: {fileID: 65894721918373153}
+  - 114: {fileID: 114032490661296983}
+  - 111: {fileID: 111985302957722733}
+  - 114: {fileID: 114669853128401178}
+  - 114: {fileID: 114832083928686641}
+  - 82: {fileID: 82475914252583854}
+  - 114: {fileID: 114847623829575897}
+  m_Layer: 0
+  m_Name: skull
+  m_TagString: Skull
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4332888814680202
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8221135, y: 1.55, z: 8.818485}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!33 &33917995205976818
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Mesh: {fileID: 4300000, guid: d1e43904ce5702a43a47d3ccc78c857d, type: 2}
+--- !u!23 &23919898212590686
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 93b5247a3bf965f45beb5a5b12be58b6, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!114 &114795485678841341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83874a39496b1812adea0cf69724a2f, type: 3}
+  m_Name:
+  shouldMove: 1
+  isCycle: 0
+  _targetCyclePoints: []
+  _range: 10
+  _speed: 1
+--- !u!65 &65894721918373153
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Size: {x: 1.5999999, y: 1.5999999, z: 1.5999999}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &114032490661296983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783a5ad274094da60ffc8ed9bfb2e010, type: 3}
+  m_Name:
+  zombie_hurt: {fileID: 8300000, guid: b656f84e9bd187f4c8955a0ce45984a5, type: 3}
+  myName: Bot
+  myHealth: 100
+  hitTexture: {fileID: 2800000, guid: 4e987bee36df4f34e9cc0f1e80ca2097, type: 3}
+--- !u!111 &111985302957722733
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114669853128401178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b323f989264f7d787b5447ae01c337, type: 3}
+  m_Name:
+  ZombieBiteAudio: {fileID: 8300000, guid: 7508841418ed73f4396cc8f01d2ef6de, type: 3}
+  ZombieVoice: {fileID: 8300000, guid: 6cc9c055e06313b4189ab787e22006c7, type: 3}
+  ZombieDeadAudio: {fileID: 8300000, guid: d227e565f61d0f242a225891428c589d, type: 3}
+  MaxDistance: 3
+  RotationSpeed: 5
+  animIdle: {fileID: 7400000, guid: ea6a1d9ca18fd78468510bac5fe6a226, type: 2}
+  animIdleSpeed: 1
+  animRun: {fileID: 7400000, guid: 93e187bf667cc1048b8aa049b48cc40d, type: 2}
+  animRunSpeed: 1
+  animZomb_run: {fileID: 7400000, guid: 25473396ff0133a43ad04e3c1a45e33a, type: 2}
+  animZomb_runSpeed: 1
+  animZomb_on: {fileID: 7400000, guid: ced2f89d4bab898449b160b113b72ea4, type: 2}
+  animZomb_off: {fileID: 7400000, guid: bce9a99d65112ae4cb70a2910a8f98f0, type: 2}
+  animShut: {fileID: 7400000, guid: ea6a1d9ca18fd78468510bac5fe6a226, type: 2}
+  animDeath: {fileID: 7400000, guid: ea6a1d9ca18fd78468510bac5fe6a226, type: 2}
+  damage: 1
+  _tors: {fileID: 0}
+  scoreForKill: 0
+  moveSpeed: 1.25
+  CurLifeTime: 0
+  LifeTime: 2
+--- !u!114 &114832083928686641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a805b2b8afb0c4fdaec356f26458486, type: 3}
+  m_Name:
+  coolDown: 2
+  homePoint: {fileID: 0}
+--- !u!82 &82475914252583854
+AudioSource:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &114847623829575897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306761399503872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e27a374277f31fdc0f7687ea1637d76, type: 3}
+  m_Name:
+  detectRadius: 17
+  _parentBot: {fileID: 4332888814680202}
+  shouldDetectPlayer: 1
